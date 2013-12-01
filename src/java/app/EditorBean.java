@@ -26,5 +26,4 @@ public class EditorBean {
         System.out.println("grabando: " + comentarios);
     return "test";
     }
-    
 }
