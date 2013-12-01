@@ -20,8 +20,9 @@ and open the template in the editor.
                 value="#{editorBean.comentarios}"
                 controls="bold italic underline strikethrough bullets"
                 required="true"
-                requiredMessage="Ingrese un comentario"/>
-            <p:commandButton value="Ingresar" action="#{editorBean.grabar}"> </p:commandButton>
+                requiredMessage="Ingrese un comentario" />
+            <p:commandButton value="Ingresar" action="#{editorBean.grabar}"> 
+            </p:commandButton>
             <p:messages id="messages" autoUpdate="true" closable="true"/>
         </h:form>
     </h:body>
