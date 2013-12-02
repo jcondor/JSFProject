@@ -14,16 +14,20 @@ and open the template in the editor.
     </h:head>
     
     <h:body>
-        <h:form>Ingrese comentarios:
+        <h:form>
+            Ingrese comentarios:
             <p:editor
                 id="comentarios"
                 value="#{editorBean.comentarios}"
                 controls="bold italic underline strikethrough bullets"
                 required="true"
-                requiredMessage="Ingrese un comentario" />
-            <p:commandButton value="Ingresar" action="#{editorBean.grabar}"> 
-            </p:commandButton>
+                requiredMessage="Ingrese un comentario"/> 
+            
+            
+            <p:commandButton value="Ingresar" action="#{editorBean.grabar}" />
+                        
             <p:messages id="messages" autoUpdate="true" closable="true"/>
+            
         </h:form>
     </h:body>
 </html>
